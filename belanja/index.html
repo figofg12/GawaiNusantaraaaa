@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gawai Nusantara</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Icon-->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <style>
+      body{
+        font-family: 'Poppins', sans-serif;
+      }
+      .btn-selengkapnya22 {
+  display: inline-block;
+  padding: 4px 20px;
+  margin-top: 2px;
+  background-color: #007aff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+.btn-selengkapnya22:hover {
+  background-color: #005bb5;
+}
+.btn-selengkapnya12 {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #007aff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.btn-selengkapnya12:hover {
+  background-color: #005bb5;
+}
+.content {
+  width: 60%;
+}
+
+.testimonial-container {
+  width: 35%;
+  background-color: rgba(246, 246, 246, 0.7);
+  padding: 15px;
+  margin-top: 14%;
+  margin-right: 2%;
+  margin-left: 5.5%;
+  border-radius: 20px;
+  backdrop-filter: blur(20px); /* Efek blur */
+  z-index:9999;
+}
+
+.testimonial-chat {
+  margin-top: 6px;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.testimonial-input {
+  margin-top: 15px;
+}
+
+.testimonial-input textarea,
+.testimonial-input input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+.name-input {
+  margin-bottom: 10px;
+}
+
+.testimonial-input button {
+  background-color: #0b85ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.testimonial-input button:hover {
+  background-color: #2e97ff;
+}
+
+#chat-box-container {
+  margin-top: 15px;
+}
+
+.chat-box {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  flex-direction: column;
+  
+}
+
+.chat-box .name {
+  font-weight: bold;
+  font-size: 12px;
+  width: 40%;
+  margin-bottom: 1.2%;
+  
+}
+
+.chat-box .message {
+  width: 100%;
+  
+}
+
+.cta {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  z-index: 999999;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.cta:hover {
+  background-color: #c0392b;
+}
+#clear-testimonials {
+  background-color: #e74c3c;
+}
+
+#clear-testimonials:hover {
+  background-color: #c0392b;
+  
+}
+#chat-box-container {
+  margin-top: 15px;
+  max-height: 130px; /* Menetapkan tinggi maksimal kotak chat */
+  overflow-y: auto;  /* Menambahkan scrollbar jika konten melebihi tinggi maksimal */
+  flex-direction: column;
+}
+.tekkarea{
+  font-family: 'Poppins', sans-serif;
+}
+.testimonial-chat h3{
+  text-align: center;
+}
+.custom_canvas_container_v2023 {
+            text-align: center;
+            padding: 15px;
+            margin: 20px auto;
+            max-width: 1300px;
+        }
+        
+        .custom_canvas_element_v2023 {
+            background-color: white;
+            border: 1px solid #ddd;
+            
+            /* Default background, akan diganti dengan class */
+        }
+        
+        /* Background options */
+        .bg-white-v2023 {
+            background-image: none;
+            background-color: white;
+        }
+        
+        .bg-gradient1-v2023 {
+            background-image: linear-gradient(to bottom right, #f9f9f9, #e9e9e9);
+        }
+        
+        .bg-gradient2-v2023 {
+            background-image: linear-gradient(to bottom right, #e6f0ff, #b3d1ff);
+        }
+        
+        .bg-gradient3-v2023 {
+            background-image: linear-gradient(to bottom right, #e6ffe6, #b3ffb3);
+        }
+        
+        .bg-image1-v2023 {
+            background-image: url(apeddddddd.png);
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .bg-image2-v2023 {
+            background-image: url(frame\ apad.png);
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .custom_canvas_select_v2023 {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            background-color: white;
+        }
+        
+        .custom_canvas_input_v2023 {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            width: 300px;
+            margin: 0 5px;
+        }
+        
+        .custom_canvas_heading_v2023 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        
+        .custom_canvas_controls_v2023 {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .custom_canvas_button_v2023 {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px 5px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        
+        .custom_canvas_button_v2023:hover {
+            background-color: #45a049;
+        }
+        
+        .custom_canvas_color_picker_v2023 {
+            margin: 10px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .custom_canvas_label_v2023 {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    </style>
+    <!--Navbar start-->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Gawai <span>Nusantara</span> </a>
+      <div class="navbar-nav">
+        <a href="#home"><img src="Apple_logo_white.svg.png" style="width: 15px;" height="auto" class="apple_icon"></a>
+        <a href="tentangkami.html">Tentang Kami</a>
+        <a href="tentangkami.html">Kontak Kami</a>
+        <a href="register.html">Masuk/Daftar</a>
+      </div>
+      <div class="navbar-extra">
+        <div class="navbar-extra">
+          <a href="#" id="search-button"><i data-feather="search"></i></a>
+          <a href="checkout.html" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
+          <a href="#" id="menu"><i data-feather="menu"></i></a>
+        </div>
+      </div>
+      <!-- Search -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box"><i data-feather="search"></i></label>
+       </div>
+      </div>
+    </nav>
+    <!--Navbar end-->
+
+
+    <!--Hero section-->
+
+    <section class="hero" id="home">
+      <main class="content">
+        <img src="logo.PNG" style="width: 95px; height: auto;" class="logo">
+        <h1>Dapatkan produk <br>Apple impian Anda di <br>Toko Gawai <span>Nusantara</span></h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, distinctio?</p>
+        <a href="#kategori" class="ctaaaa">Beli Sekarang</a>
+      </main>
+    
+      <!-- Testimoni Pelanggan Section -->
+      <div class="testimonial-container">
+        <div class="testimonial-chat">
+          <h3>Testimoni Pelanggan</h3>
+          <div id="chat-box-container" class="chatboxcontainer">
+            <!-- Testimoni pelanggan akan ditampilkan di sini -->
+          </div>
+          <div class="testimonial-input">
+            <input type="text" id="customer-name" placeholder="@username" class="name-input">
+            <textarea id="testimonial-input" placeholder="Tulis testimoni Anda..." rows="4"></textarea class="name-input">
+            <button id="submit-testimonial" class="butttonnnn">Kirim Testimoni</button>
+            <button id="clear-testimonials" class="butttonnnn">Hapus Semua Testimoni</button> <!-- Tombol untuk hapus semua testimoni -->
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    <!-- Produk Apple Section -->
+<section class="produk-apple" id="kategori">
+  <h2>Berbagai produk Apple.</h2>
+  <br>
+  <div class="produk-container">
+    <a href="mac.html" class="appleitem">
+      <img src="mac.png" alt="mac">
+      <p class="produk-nama">Mac</p>
+      <p class="produk-harga">Mulai Rp8 juta</p>
+    </a>
+    <a href="iphone.html" class="appleitem">
+      <img src="ipon.png" alt="iPhone">
+      <p class="produk-nama">iPhone</p>
+      <p class="produk-harga">Mulai Rp8 juta</p>
+    </a>
+    <a href="ipad.html" class="appleitem">
+      <img src="ipad.png" alt="iPad">
+      <p class="produk-nama">iPad</p>
+      <p class="produk-harga">Mulai Rp4 juta</p>
+    </a>
+    <a href="watch.html" class="appleitem">
+      <img src="waacth.png" alt="Watch">
+      <p class="produk-nama">WATCH</p>
+      <p class="produk-harga">Mulai Rp3 juta</p>
+    </a>
+    <a href="airpods.html" class="appleitem">
+      <img src="erpods.png" alt="AirPods">
+      <p class="produk-nama">Music</p>
+      <p class="produk-harga">Mulai Rp1 juta</p>
+    </a>
+  </div>
+</section>
+
+    
+    <div class="aipon">
+      <a href="iphone.html">
+        <button class="btn-selengkapnya123">Selengkapnya</button>
+      </a>
+      <img src="Frame 2 (6).png" alt="iPhone 16">
+    </div>
+
+    <div class="video-container">
+      <video autoplay muted loop controls>
+          <source src="IMG_5591.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+  </div>
+
+  <div class="video-container">
+    <video autoplay muted loop controls>
+        <source src="IMG_5599 (1).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<div class="aipon">
+  <img src="kakak (1).png" alt="iPhone 16">
+</div>
+
+  <div class="product-container2">
+    <div class="product12">
+      <button class="btn-selengkapnya12">Selengkapnya</button>
+        <img src="Frame 8.png" alt="MacBook Air">
+    </div>
+
+    <div class="product12">
+      <a href="ipadbintang.html">
+          <button class="btn-selengkapnya22">Selengkapnya</button>
+      </a>
+      <img src="Frame 9 (3).png" alt="iPad Pro">
+  </div>
+</div>
+
+<br><br><br>
+
+<div class="custom_canvas_container_v2023">
+  <h1 class="custom_canvas_heading_v2023">Canvas Interaktif</h1>
+  
+  <canvas id="uniqueMyCanvas_v2023" class="custom_canvas_element_v2023 bg-gradient1-v2023" width="1200" height="800"></canvas>
+  
+  <div class="custom_canvas_controls_v2023">
+      <div class="custom_canvas_color_picker_v2023">
+          <label for="uniqueColorInput_v2023" class="custom_canvas_label_v2023">Pilih Warna:</label>
+          <input type="color" id="uniqueColorInput_v2023" value="#000000">
+          
+          <label for="uniqueLineWidth_v2023" class="custom_canvas_label_v2023">Ketebalan Garis:</label>
+          <input type="range" id="uniqueLineWidth_v2023" min="1" max="20" value="5">
+      </div>
+      
+      <div class="custom_canvas_color_picker_v2023">
+          <label for="uniqueBgSelect_v2023" class="custom_canvas_label_v2023">Background:</label>
+          <select id="uniqueBgSelect_v2023" class="custom_canvas_select_v2023">
+              <option value="white">Putih</option>
+              <option value="gradient1" selected>Gradien Abu-abu</option>
+              <option value="gradient2">Gradien Biru</option>
+              <option value="gradient3">Gradien Hijau</option>
+              <option value="pattern1">Pola Grid</option>
+              <option value="pattern2">Pola Titik</option>
+              <option value="image2">Gambar background.jpg</option>
+          </select>
+      </div>
+      
+      <button id="uniqueClearBtn_v2023" class="custom_canvas_button_v2023">Hapus Semua</button>
+  </div>
+</div>
+
+     
+
+
+    <!--Hero section end-->
+    
+    <!--Menu section start-->
+   
+    
+    
+    
+  
+
+
+
+    <!--Menu section end-->
+    <div id="checkout-modal" class="modal">
+      <div class="modal-container">
+        <a href="#" class="close-modal"><i data-feather="x"></i></a>
+        <h2>Checkout</h2>
+        <form id="checkout-form">
+          <label for="name">Nama:</label>
+          <input type="text" id="name" name="name" required placeholder="Masukkan nama lengkap"/>
+    
+          <label for="phone">Nomor HP:</label>
+          <input type="text" id="phone" name="phone" required placeholder="08922334161930"/>
+                                   
+          <label>Metode Pengambilan:</label>
+          <div>
+              <select id="metode-pengambilan">
+                  <option value="pickup">Pickup mandiri</option>
+                  <option value="diantar">Diantar</option>
+              </select>
+          </div>
+          
+          <label>Pembayaran:</label>
+          <div>
+              <select id="metode-pengambilan">
+                  <option value="Cash">Cash</option>
+                  <option value="Kartu Debit">Kartu Debit</option>
+                  <option value="Kartu Kredit">Kartu Kredit</option>
+              </select>
+          </div>
+    
+          <div id="alamat-field" style="display: none;">
+              <label for="alamat">Alamat:</label>
+              <input type="text" id="alamat" name="alamat" placeholder="Masukkan alamat">
+          </div>
+    
+    
+    
+          <h3>Pesanan Anda:</h3>
+          <ul id="order-summary"></ul>
+    
+          <p><strong>Total: <span id="total-price">Rp. 0</span></strong></p>
+    
+          <button type="submit" id="checkout-btn">Konfirmasi Pembelian</button>
+        </form>
+      </div>
+    </div>
+
+    
+
+    <footer class="footer">
+      <div class="footer-left">
+        <p><span>🕒</span> Jam 09:00 - 18:00</p>
+        <p><span>📧</span> Email : <a href="mailto:customercare@erajaya.com">customercare@erajaya.com</a></p>
+        <p><span>📞</span> Contact Center : <a href="tel:1500372">1500372</a></p>
+        <p><span>📱</span> WhatsApp : <a href="https://wa.me/6281290777722">0812 9077 7722</a></p>
+
+        <br>
+        <br><br><br> <br>
+  
+        <div class="pengaduan">
+          <h3>Layanan Pengaduan Konsumen</h3>
+          <p>Direktorat Jenderal Perlindungan Konsumen dan Tertib Niaga<br>
+          Kementerian Perdagangan Republik Indonesia</p>
+          <p>WhatsApp Ditjen PKTN:<br><strong>0853-1111-1010</strong></p>
+        </div>
+      </div>
+  
+      <div class="footer-right">
+        <div class="sosmed-icons">
+          <span><img src="logoicon (1).png" alt=""></span><span><img src="logoicon (2).png" alt=""></span><span><img src="logoicon (3).png" alt=""></span><span><img src="logoicon (4).png" alt=""></span><span><img src="logoicon (5).png" alt=""></span><span><img src="logoicon (6).png" alt=""></span>
+        </div>
+  
+        <h3>Metode Pembayaran</h3>
+        <div class="payments">
+          <img src="payment-footer-maret-2025.webp" alt="Metode Pembayaran">
+          <br>
+        </div>
+  
+        <h3>Jasa Pengiriman</h3>
+        <div class="shipping">
+          <img src="shipping (1).webp" alt="Jasa Pengiriman">
+        </div>
+      </div>
+    </footer>
+
+    <!--Feather icon-->
+    <script>
+      feather.replace();
+    </script>
+    <script>
+      let lastScrollTop = 0; // Variabel untuk menyimpan posisi scroll sebelumnya
+
+window.addEventListener("scroll", function() {
+    let navbar = document.querySelector(".navbar");
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Jika scroll ke bawah, sembunyikan navbar
+    if (currentScroll > lastScrollTop) {
+        navbar.style.top = "-100px";  // Atur angka ini sesuai tinggi navbar kamu
+    } else {
+        navbar.style.top = "0";  // Tampilkan navbar saat scroll ke atas
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Menghindari nilai negatif
+});
+
+// Fungsi untuk menyimpan testimoni ke localStorage
+// Fungsi untuk menyimpan testimoni ke localStorage
+function saveTestimonialToLocalStorage(name, message) {
+  let testimonials = localStorage.getItem('testimonials');
+  testimonials = testimonials ? JSON.parse(testimonials) : [];
+
+  // Tambahkan testimoni baru ke dalam array
+  testimonials.push({ name, message });
+
+  // Simpan kembali ke localStorage
+  localStorage.setItem('testimonials', JSON.stringify(testimonials));
+}
+
+// Fungsi untuk memuat testimoni dari localStorage
+function loadTestimonialsFromLocalStorage() {
+  let testimonials = localStorage.getItem('testimonials');
+  testimonials = testimonials ? JSON.parse(testimonials) : [];
+
+  // Tampilkan testimoni di halaman
+  const chatBoxContainer = document.getElementById('chat-box-container');
+  chatBoxContainer.innerHTML = ''; // Bersihkan konten yang ada
+
+  testimonials.forEach(testimonial => {
+    const newTestimonial = document.createElement('div');
+    newTestimonial.classList.add('chat-box');
+
+    const nameColumn = document.createElement('div');
+    nameColumn.classList.add('name');
+    nameColumn.textContent = testimonial.name;
+
+    const messageColumn = document.createElement('div');
+    messageColumn.classList.add('message');
+    messageColumn.textContent = testimonial.message;
+
+    newTestimonial.appendChild(nameColumn);
+    newTestimonial.appendChild(messageColumn);
+
+    chatBoxContainer.appendChild(newTestimonial);
+  });
+}
+
+// Event listener untuk mengirim testimoni
+document.getElementById('submit-testimonial').addEventListener('click', function() {
+  const customerName = document.getElementById('customer-name').value;
+  const testimonialText = document.getElementById('testimonial-input').value;
+
+  if (customerName.trim() !== "" && testimonialText.trim() !== "") {
+    // Simpan testimoni ke localStorage
+    saveTestimonialToLocalStorage(customerName, testimonialText);
+
+    // Muat ulang semua testimoni dari localStorage
+    loadTestimonialsFromLocalStorage();
+
+    // Bersihkan input setelah kirim
+    document.getElementById('customer-name').value = "";
+    document.getElementById('testimonial-input').value = "";
+  } else {
+    alert("Tolong isi nama dan testimoni terlebih dahulu.");
+  }
+});
+
+// Event listener untuk menghapus semua testimoni
+document.getElementById('clear-testimonials').addEventListener('click', function() {
+  // Menghapus semua testimoni di localStorage
+  localStorage.removeItem('testimonials');
+
+  // Bersihkan tampilan testimoni
+  document.getElementById('chat-box-container').innerHTML = '';
+
+  alert("Semua testimoni telah dihapus.");
+});
+
+// Muat testimoni dari localStorage saat halaman pertama kali dimuat
+window.onload = loadTestimonialsFromLocalStorage;
+
+(function() {
+            // Mengambil elemen canvas dan context dengan ID unik
+            const canvas = document.getElementById('uniqueMyCanvas_v2023');
+            const ctx = canvas.getContext('2d');
+            
+            // Variabel untuk menggambar
+            let isDrawing = false;
+            let lastX = 0;
+            let lastY = 0;
+            
+            // Elemen kontrol dengan ID unik
+            const colorInput = document.getElementById('uniqueColorInput_v2023');
+            const lineWidth = document.getElementById('uniqueLineWidth_v2023');
+            const clearBtn = document.getElementById('uniqueClearBtn_v2023');
+            
+            // Fungsi memulai menggambar
+            function startDrawing(e) {
+                isDrawing = true;
+                const rect = canvas.getBoundingClientRect();
+                lastX = e.clientX - rect.left;
+                lastY = e.clientY - rect.top;
+            }
+            
+            // Fungsi menggambar
+            function draw(e) {
+                if (!isDrawing) return;
+                
+                const rect = canvas.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                ctx.strokeStyle = colorInput.value;
+                ctx.lineWidth = lineWidth.value;
+                ctx.lineCap = 'round';
+                
+                ctx.beginPath();
+                ctx.moveTo(lastX, lastY);
+                ctx.lineTo(x, y);
+                ctx.stroke();
+                
+                lastX = x;
+                lastY = y;
+            }
+            
+            // Fungsi berhenti menggambar
+            function stopDrawing() {
+                isDrawing = false;
+            }
+            
+            // Fungsi untuk menggambar background
+            function drawBackground(bgType, imageUrl = null) {
+                // Fungsi ini tidak digunakan lagi, karena sekarang menggunakan CSS class
+            }
+            
+            // Fungsi hapus kanvas
+            function clearCanvas() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                
+                // Jika background adalah pola, gambar ulang polanya
+                if (bgSelect.value === 'pattern1') {
+                    drawPatternGrid();
+                } else if (bgSelect.value === 'pattern2') {
+                    drawPatternDots();
+                }
+            }
+            
+            // Event listeners untuk menggambar
+            canvas.addEventListener('mousedown', startDrawing);
+            canvas.addEventListener('mousemove', draw);
+            canvas.addEventListener('mouseup', stopDrawing);
+            canvas.addEventListener('mouseout', stopDrawing);
+            
+            // Event listener untuk ganti background
+            const bgSelect = document.getElementById('uniqueBgSelect_v2023');
+            
+            bgSelect.addEventListener('change', function() {
+                // Hapus semua class background
+                canvas.classList.remove(
+                    'bg-white-v2023', 
+                    'bg-gradient1-v2023', 
+                    'bg-gradient2-v2023', 
+                    'bg-gradient3-v2023', 
+                    'bg-image1-v2023',
+                    'bg-image2-v2023'
+                );
+                
+                // Tambahkan class background yang dipilih
+                switch(this.value) {
+                    case 'white':
+                        canvas.classList.add('bg-white-v2023');
+                        ctx.clearRect(0, 0, canvas.width, canvas.height);
+                        break;
+                    case 'gradient1':
+                        canvas.classList.add('bg-gradient1-v2023');
+                        ctx.clearRect(0, 0, canvas.width, canvas.height);
+                        break;
+                    case 'gradient2':
+                        canvas.classList.add('bg-gradient2-v2023');
+                        ctx.clearRect(0, 0, canvas.width, canvas.height);
+                        break;
+                    case 'gradient3':
+                        canvas.classList.add('bg-gradient3-v2023');
+                        ctx.clearRect(0, 0, canvas.width, canvas.height);
+                        break;
+                    case 'image1':
+                        canvas.classList.add('bg-image1-v2023');
+                        ctx.clearRect(0, 0, canvas.width, canvas.height);
+                        break;
+                    case 'image2':
+                        canvas.classList.add('bg-image2-v2023');
+                        ctx.clearRect(0, 0, canvas.width, canvas.height);
+                        break;
+                    case 'pattern1':
+                        canvas.classList.add('bg-white-v2023');
+                        drawPatternGrid();
+                        break;
+                    case 'pattern2':
+                        canvas.classList.add('bg-white-v2023');
+                        drawPatternDots();
+                        break;
+                }
+            });
+            
+            // Fungsi untuk menggambar pola grid
+            function drawPatternGrid() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                
+                ctx.strokeStyle = "#e0e0e0";
+                ctx.lineWidth = 1;
+                
+                // Draw vertical lines
+                for (let x = 0; x <= canvas.width; x += 20) {
+                    ctx.beginPath();
+                    ctx.moveTo(x, 0);
+                    ctx.lineTo(x, canvas.height);
+                    ctx.stroke();
+                }
+                
+                // Draw horizontal lines
+                for (let y = 0; y <= canvas.height; y += 20) {
+                    ctx.beginPath();
+                    ctx.moveTo(0, y);
+                    ctx.lineTo(canvas.width, y);
+                    ctx.stroke();
+                }
+            }
+            
+            // Fungsi untuk menggambar pola titik
+            function drawPatternDots() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                
+                ctx.fillStyle = "#e0e0e0";
+                
+                // Draw dots
+                for (let x = 10; x < canvas.width; x += 20) {
+                    for (let y = 10; y < canvas.height; y += 20) {
+                        ctx.beginPath();
+                        ctx.arc(x, y, 2, 0, Math.PI * 2);
+                        ctx.fill();
+                    }
+                }
+            }
+            
+            // Fungsi hapus kanvas
+            function clearCanvas() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                
+                // Jika background adalah pola, gambar ulang polanya
+                if (bgSelect.value === 'pattern1') {
+                    drawPatternGrid();
+                } else if (bgSelect.value === 'pattern2') {
+                    drawPatternDots();
+                }
+            }
+            function handleTouchStart(e) {
+                e.preventDefault();
+                const touch = e.touches[0];
+                const rect = canvas.getBoundingClientRect();
+                lastX = touch.clientX - rect.left;
+                lastY = touch.clientY - rect.top;
+                isDrawing = true;
+            }
+            
+            function handleTouchMove(e) {
+                e.preventDefault();
+                if (!isDrawing) return;
+                
+                const touch = e.touches[0];
+                const rect = canvas.getBoundingClientRect();
+                const x = touch.clientX - rect.left;
+                const y = touch.clientY - rect.top;
+                
+                ctx.strokeStyle = colorInput.value;
+                ctx.lineWidth = lineWidth.value;
+                ctx.lineCap = 'round';
+                
+                ctx.beginPath();
+                ctx.moveTo(lastX, lastY);
+                ctx.lineTo(x, y);
+                ctx.stroke();
+                
+                lastX = x;
+                lastY = y;
+            }
+            
+            function handleTouchEnd(e) {
+                e.preventDefault();
+                isDrawing = false;
+            }
+            
+            // Event listeners untuk perangkat sentuh
+            canvas.addEventListener('touchstart', handleTouchStart);
+            canvas.addEventListener('touchmove', handleTouchMove);
+            canvas.addEventListener('touchend', handleTouchEnd);
+        })(); // IIFE ends here
+
+    </script>
+    <!--Js-->
+    
+  </body>
+</html>
